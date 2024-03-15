@@ -40,6 +40,8 @@ namespace Sufficit.Asterisk.Manager.Events
 
         public string AmaFlags { get; set; }
 
+        public string UniqueID { get; set; }
+
         public string UserField { get; set; }
     }
 }
