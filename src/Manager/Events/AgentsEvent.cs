@@ -7,7 +7,7 @@ namespace Sufficit.Asterisk.Manager.Events
     ///     Available since Asterisk 1.2
     /// </summary>
     /// <seealso cref="Manager.Action.AgentsAction" />
-    public class AgentsEvent : ResponseEvent
+    public sealed class AgentsEvent : ResponseEvent
     {
         /// <summary>
         ///     Get/Set the agentid.

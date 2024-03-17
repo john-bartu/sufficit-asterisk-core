@@ -8,7 +8,7 @@ namespace Sufficit.Asterisk.Manager.Events
     ///     Raised when a queue member is notified of a caller in the queue and fails to answer.<br/>
     ///     See <see target="_blank"  href="https://wiki.asterisk.org/wiki/display/AST/Asterisk+16+ManagerEvent_AgentRingNoAnswer">https://wiki.asterisk.org/wiki/display/AST/Asterisk+16+ManagerEvent_AgentRingNoAnswer</see>
     /// </summary>
-    public class AgentRingNoAnswerEvent : AbstractQueueAgentDestEvent
+    public sealed class AgentRingNoAnswerEvent : AbstractQueueAgentDestEvent
     {
         /// <summary>
         ///     Get/Set the amount of time the caller was on ring.

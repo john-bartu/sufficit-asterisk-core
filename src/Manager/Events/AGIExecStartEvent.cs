@@ -9,7 +9,7 @@ namespace Sufficit.Asterisk.Manager.Events
     /// <summary>
     /// Raised when a received AGI command starts processing.
     /// </summary>
-    public class AGIExecStartEvent : AbstractChannelStateEvent
+    public sealed class AGIExecStartEvent : AbstractChannelStateEvent
     {
         [JsonPropertyName("calleridnum")]
         [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingNull | JsonIgnoreCondition.WhenWritingDefault)]

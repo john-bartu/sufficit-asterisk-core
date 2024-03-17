@@ -7,7 +7,7 @@ namespace Sufficit.Asterisk.Manager.Events
     /// It is implemented in apps/app_queue.c
     /// </summary>
     /// <seealso cref="QueueStatusAction" />
-    public class QueueEntryEvent : ResponseEvent
+    public sealed class QueueEntryEvent : ResponseEvent
 	{
 		/// <summary>
 		/// Get/Set the name of the queue that contains this entry.

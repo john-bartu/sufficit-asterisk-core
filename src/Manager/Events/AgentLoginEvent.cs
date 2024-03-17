@@ -7,7 +7,7 @@ namespace Sufficit.Asterisk.Manager.Events
     ///     It is implemented in channels/chan_agent.c
     /// </summary>
     /// <seealso cref="Manager.Event.AgentLogoffEvent" />
-    public class AgentLoginEvent : ManagerEvent
+    public sealed class AgentLoginEvent : ManagerEvent
     {
         /// <summary>
         ///     Get/Set the name of the agent that logged in.

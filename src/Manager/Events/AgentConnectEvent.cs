@@ -6,7 +6,7 @@ namespace Sufficit.Asterisk.Manager.Events
     /// <summary>
     ///     An AgentConnectEvent is triggered when a caller is connected to an agent.
     /// </summary>
-    public class AgentConnectEvent : AbstractQueueAgentDestEvent
+    public sealed class AgentConnectEvent : AbstractQueueAgentDestEvent
     {
         /// <summary>
         ///     Get/Set the amount of time the caller was on hold.

@@ -8,7 +8,7 @@ namespace Sufficit.Asterisk.Manager.Events
     /// Available since Asterisk 1.2
     /// </summary>
     /// <seealso cref="Manager.Action.AgentsAction" />
-    public class AgentsCompleteEvent : ResponseEvent
+    public sealed class AgentsCompleteEvent : ResponseEvent
 	{
 
 	}

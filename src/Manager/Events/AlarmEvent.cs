@@ -6,7 +6,7 @@ namespace Sufficit.Asterisk.Manager.Events
     ///     An AlarmEvent is triggered when a Zap channel enters or changes alarm state.<br />
     ///     It is implemented in channels/chan_zap.c
     /// </summary>
-    public class AlarmEvent : ManagerEvent
+    public sealed class AlarmEvent : ManagerEvent
     {
         /// <summary>
         ///     Get/Set the kind of alarm that happened.<br />

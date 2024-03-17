@@ -5,7 +5,7 @@ namespace Sufficit.Asterisk.Manager.Events
 	/// <summary>
 	/// A QueueCallerLeaveEvent is triggered when a channel leaves a queue.<br/>
 	/// </summary>
-	public class QueueCallerLeaveEvent : LeaveEvent, IChannelInfoEvent, IChannelEvent
+	public class QueueCallerLeaveEvent : LeaveEvent, IChannelInfoEvent
 	{
 		public int Position { get; set; }
 

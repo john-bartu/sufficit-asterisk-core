@@ -5,7 +5,7 @@ namespace Sufficit.Asterisk.Manager.Events
     /// <summary>
     ///     An AgentCompleteEvent is triggered when at the end of a call if the caller was connected to an agent.
     /// </summary>
-    public class AgentCompleteEvent : AbstractQueueAgentDestEvent
+    public sealed class AgentCompleteEvent : AbstractQueueAgentDestEvent
     {
 
         /// <summary>

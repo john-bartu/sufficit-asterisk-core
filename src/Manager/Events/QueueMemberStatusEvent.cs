@@ -6,7 +6,7 @@ namespace Sufficit.Asterisk.Manager.Events
 	/// <summary>
 	/// Raised when a Queue member's status has changed
 	/// </summary>
-	public class QueueMemberStatusEvent : AbstractQueueMemberEvent
+	public sealed class QueueMemberStatusEvent : AbstractQueueMemberEvent
 	{
 		
 	}

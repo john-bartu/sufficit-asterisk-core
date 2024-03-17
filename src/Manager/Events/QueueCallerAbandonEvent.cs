@@ -4,7 +4,7 @@ using System.Text.Json.Serialization;
 
 namespace Sufficit.Asterisk.Manager.Events
 {
-	public class QueueCallerAbandonEvent : QueueEvent, IChannelInfoEvent, IChannelEvent
+	public sealed class QueueCallerAbandonEvent : QueueEvent, IChannelInfoEvent
     {
         #region CHANNEL INTERFACE
 

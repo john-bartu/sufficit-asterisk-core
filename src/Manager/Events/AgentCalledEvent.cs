@@ -7,7 +7,7 @@ namespace Sufficit.Asterisk.Manager.Events
     ///     To enable AgentCalledEvents you have to set eventwhencalled = yes in queues.conf.<br />
     ///     This event is implemented in apps/app_queue.c
     /// </summary>
-    public class AgentCalledEvent : AbstractQueueAgentDestEvent
+    public sealed class AgentCalledEvent : AbstractQueueAgentDestEvent
     {
         public string AgentName { get; set; } = string.Empty;
 

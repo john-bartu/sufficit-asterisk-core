@@ -8,7 +8,7 @@ namespace Sufficit.Asterisk.Manager.Events
     ///     cdr_manager.conf.<br />
     ///     This event is implemented in cdr/cdr_manager.c
     /// </summary>
-    public class CdrEvent : ManagerEvent
+    public sealed class CdrEvent : ManagerEvent
     {
         public string AccountCode { get; set; }
 

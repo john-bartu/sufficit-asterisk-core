@@ -6,7 +6,7 @@ namespace Sufficit.Asterisk.Manager.Events
 	/// <summary>
 	/// A QueueCallerJoinEvent is triggered when a channel joins a queue.<br/>
 	/// </summary>
-	public class QueueCallerJoinEvent : JoinEvent, IChannelInfoEvent, IChannelEvent
+	public sealed class QueueCallerJoinEvent : JoinEvent, IChannelInfoEvent
 	{
 		#region IMPLEMENT INTERFACE CHANNEL INFO EVENT
 
