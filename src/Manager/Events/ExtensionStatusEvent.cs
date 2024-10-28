@@ -7,7 +7,7 @@ namespace Sufficit.Asterisk.Manager.Events
 	/// An ExtensionStatusEvent is triggered when the state of an extension changes.<br/>
 	/// It is implemented in manager.c
 	/// </summary>
-	public class ExtensionStatusEvent : ManagerEvent, IExtensionStatusEvent
+	public class ExtensionStatusEvent : ResponseEvent, IExtensionStatusEvent
 	{
 		string IEventBase.Key => "Event:ExtensionStatus";
 
