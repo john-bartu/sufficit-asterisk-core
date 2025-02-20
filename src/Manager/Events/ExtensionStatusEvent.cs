@@ -1,5 +1,6 @@
 using Sufficit.Asterisk.Manager.Events.Abstracts;
 using System;
+using System.Text.Json.Serialization;
 
 namespace Sufficit.Asterisk.Manager.Events
 {
@@ -16,21 +17,28 @@ namespace Sufficit.Asterisk.Manager.Events
 		/// <summary>
 		/// Get/Set the extension hint.
 		/// </summary>
-		public string Hint { get; set; }
+		[JsonPropertyName("hint")]
+		public string Hint { get; set; } = default!;
 
-		/// <summary>
-		/// Get/Set the extension.
-		/// </summary>
-		public string Exten { get; set; }
+        /// <summary>
+        /// Get/Set the extension.
+        /// </summary>
+        [JsonPropertyName("exten")] 
+		public string Exten { get; set; } = default!;
 
-		/// <summary>
-		/// Get/Set the context of the extension.
-		/// </summary>
-		public string Context { get; set; }
+        /// <summary>
+        /// Get/Set the context of the extension.
+        /// </summary>
+        [JsonPropertyName("context")] 
+		public string Context { get; set; } = default!;
 
-		/// <summary>
-		/// Get/Set the state of the extension.
-		/// </summary>
+        /// <summary>
+        /// Get/Set the state of the extension.
+        /// </summary>
+        [JsonPropertyName("status")] 
 		public ExtensionStatus Status { get; set; }
+
+        [JsonPropertyName("statustext")]
+        public string StatusText { get; set; } = default!;
 	}
 }
